@@ -28,7 +28,7 @@
 
     var receive = function (msg) {
         var li = document.createElement('li');
-        li.innerText = msg;
+        li.innerHTML = msg;
         document.getElementById('messages').appendChild(li);
     }
     socket.on('chat message', receive);
